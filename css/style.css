@@ -8,6 +8,9 @@
     --primary-color: #D423D5;
     --secondayr-color: #010A1B;
 }
+body{
+    background-color: #010A1B;
+}
 
 header{
     width: 100%;
@@ -66,3 +69,9 @@ marquee{
     font-size: 30px;
     color: bisque;
 }
+
+.outline{
+    margin-left: 50px;
+    color:bisque;
+    font-size: 25px;;
+  }
