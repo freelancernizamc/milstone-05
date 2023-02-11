@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone 05: Module-26</title>
+    <link rel="stylesheet" href="css/mod26.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1 class="tracking-in-expand">MILSTONE 04<br>MODULE 26</h1>
+            </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mod25.html">Module-25</a></li>
+              <li><a href="#">Module-27</a></li>
+              <li><a href="#">Module-28</a></li>
+              <li><a href="#">Module-29</a></li>
+              <li class="dropdown">
+                <a href="#">Milstone</a>
+                <ul class="dropdown-content">
+                  <li><a href="#">Milstone 01</a></li>
+                  <li><a href="#">Milstone 02</a></li>
+                  <li><a href="#">Milstone 03</a></li>
+                  <li><a href="#">Milstone 04</a></li>
+                </ul>
+              </li>
+              <button class="btn tracking-in-expand">Download My CV</button>
+            </ul>
+         
+          </nav>
+          <div class="banner">
+            <div class="banner-text">
+                <h2>Assalamualaikum</h2>
+                <h1>I am Nizam</h1>
+                <h2> Student of Batch-7</h2>
+                <h2>I am a Professional Web Developer</h2>
+            </div>
+            <div class="banner-img">
+                <img src="images/Md-Nizam-uddin.jpeg">
+            </div>
+        </div>
+          <marquee>WELCOME TO MILSTONE 05 MODULE 26 PRACTICE SECTION, I AM NIZAM STUDENT OF BATCH 07</marquee>
+    </header>
+
+
+
+<section id="evenHendler">
+    <div>
+        <h3 class="title"> Video 26-0 What is Dom</h3>
+        <p> DOM is programming interface for HTML</p>
+    <button onclick="console.log('Nizam')" class="btn tracking-in-expand">Click Here</button>
+   
+      </div>
+</section>
+<section>
+    <h3 class="title">Video 26-1 What is Event, different types of event in web</h3>
+    <h1> DOM er ajker Events</h1>
+    <button onclick="console.log(7)" class="btn">Click Me</button>
+</section>
+<section>
+    <h3 class="title">Video 26-2 Add onclick handler directly or via javascript</h3>
+    <h1> DOM er ajker Events</h1>
+    <button onclick="document.body.style.backgroundColor='green'" class="btn">Make Green</button>
+
+    <button onclick="makeRed()" class="btn">Make Red</button>
+    <button id="make-purple" class="btn">Make Purple</button>
+    <button id="make-blue" class="btn">Make Blue</button>
+</section>
+<section>
+    <h3 class="title">Video 26-3 Different ways to use addEventListener on a button</h3>
+    <!-- Option 4 -->
+    <button id="make-pink" class="btn">Make Pink</button>
+    <button id="make-tometo" class="btn">Make Orange</button>
+    <button id="make-goldenrod" class="btn">Make Goldenrod</button>
+    </section>
+    <section>
+        <h3 class="title">Video 26-4 Most common ways to set Event Handlers</h3>
+        <h1> Final  Dom Event Handlers</h1>
+        <p id="input-text-display">Default Input text</p>
+        <input id="input-field"type="text">
+        <button id="button-update">Update</button>
+        <br><br>
+        <h1 id="handler-status"> Default Text</h1>
+        <button onclick="handleOnClick()" class="btn">Handle Event by Add onclick Function</button>
+        <button id="even-listener" class="btn">Handle Event by addEventListener</button>
+    </section>
+    <section>
+        <h3 class="title">Video 26-5 Create a comment box and display comment</h3>
+        <h2>Please add your coment</h2>
+        <div id="comment-container">
+            <!-- p*3>lorem -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente dolore laborum. Enim architecto, cumque pariatur a, magnam eaque suscipit facilis magni dolore similique quae. Fuga unde voluptate harum doloribus dicta similique nisi sed ut recusandae consequatur tempora excepturi molestiae, cum tempore natus quos illum, temporibus quod accusantium facere autem.</p>
+            <p>Similique sapiente voluptatibus omnis nihil consectetur error fugiat officia exercitationem aliquam itaque. Est provident nesciunt eos sunt magni saepe, quod, perspiciatis soluta accusamus, culpa deleniti? Numquam recusandae eligendi explicabo at doloremque id. Neque voluptatibus libero eius sint similique, accusantium repellat quae nihil asperiores nemo ex cupiditate velit, illo dicta dignissimos.</p>
+            <p>Animi voluptas saepe accusantium soluta, fugit eum necessitatibus itaque eligendi sequi perferendis, recusandae iusto libero enim earum corrupti vel ex natus repudiandae similique nisi quia illo amet, deserunt reprehenderit? Tempora ipsum vero, minima provident adipisci esse, dignissimos dolor, corrupti accusamus necessitatibus doloremque ipsam neque quidem soluta inventore repellat natus maxime!</p>
+        </div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post" class="btn">Post</button>
+    </section>
+    <section>
+        <h3 class="title">Video 26-6 Simple github like delete confirmation button
+        </h3>
+        <h2> Explore more events</h2>
+        <button id="btn-more">Events</button>
+        <input id="text-in" type="text">
+        <div>
+            <h1 id="secret-info">My Secret info</h1>
+            <input id="delete-confirm" type="text" placeholder="please type delete">
+            <button id="button-delete" disabled>Delete</button>
+        </div>
+    </section><br>
+    
+        <h3 class="title">Video 26-7 (semi-advanced) Event bubble and Stop propagating</h3><br>
+        <section class="video-7">
+        <h1>Exploring Event Bubble</h1><br>
+        <diV id="list-container"><br>
+            <ul id="list-ul">
+                <li id="item-1">Lorem, ipsum.</li>
+                <li id="item-2">Dolorem, alias.</li>
+                <li id="item-3">Atque, molestiae.</li>
+                <li id="item-4">Unde, molestias!</li>
+                <li id="item-5">Quasi, possimus!</li>
+                <li id="item-6">Repellendus, quas.</li>
+            </ul>
+        </diV>
+    </section>
+    <h3 class="title">Video 26-8 (advanced) Event delegate and benefit of Event bubble
+    </h3><br>
+    <section>
+        <h1>Explore Event Delegate</h1>
+        <div>
+            <ul id="list-container2">
+                <li class="item">Lorem, ipsum dolor.</li>
+                <li class="item">Ex, repudiandae. Ad!</li>
+                <li class="item">Accusantium, saepe dignissimos.</li>
+                <li class="item">Sit, ipsam excepturi.</li>
+                <li class="item">Perspiciatis, odio fugit.</li>
+                <li class="item">Illo, fugit est.</li>
+            </ul>
+            <button id="btn-add-item">Add Item</button>
+        </div>
+    </section><br>
+    <section>
+        <h3 class="title">Video 26-9 DOM events summary and home work</h3>
+    <div>
+        <h1>Explore DOM Events</h1>
+        <button onclick="makeGreen()">make-green</button>
+        <button id="make-red">make-red</button>
+    </div>
+    
+    </section>
+    <br>
+    <section>
+        <h1 class="title">QUIZ</h1>
+        <h2 class="video">Q1: What is an event on a website?<br>
+        Ans: All of the above</h2>
+        <h2 class="video2">Q2: Which one is not a keyboard event?<br>
+        Ans: keyhug</h2>
+        <h2 class="video">Q3: How will you add the purchaseProduct function for clicking on the button?
+
+            <button _______?_______>Purchase Now</button><br>
+        Ans: onclick = "purchaseProduct()</h2>
+        <h2 class="video2">Q4: How will you add a click handler?
+
+            document.getElementById(‘order’)_____?____(‘click’, function(){ })
+            <br>
+        Ans: .addEventListener</h2>
+        <h2 class="video">Q5: What is a callback function in javascript? (google it)<br>
+        Ans: Pass a function as a parameter</h2>
+        <h2 class="video2">Q6: What is the event bubble? (if needed google it. Also note: it’s a common interview question)<br>
+        Ans: Propagating an event from the lowest to the upward</h2>
+        <h2 class="video">Q7: How can you access the inner content of a text input field?<br>
+        Ans: value</h2>
+        <h2 class="video2">Q8: Select the first element with the selector statement  
+
+            .main .title .t1<br>
+        Ans: document.querySelector(".main.title.t1")</h2>
+        <h2 class="video">Q9: Select the parent element of the element elm using one of the following choices.<br>
+        Ans: elm.parentNode()</h2>
+        <h2 class="video2">Q10: How will you get text inside an input tag?
+
+            event.__?__ ;<br>
+        Ans: target.value</h2>
+    </section>
+   
+
+
+
+
+
+<script src="js/mod26.js"></script>
+</body>
+</html>
