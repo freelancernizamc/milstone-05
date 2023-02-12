@@ -157,4 +157,31 @@ nav {
     color:rebeccapurple;
     text-align: center;
   }
+  /* footer part */
+  footer{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0F0826;
+    color: bisque;
+}
+.part1 img{
+    width: 40%;
+    border-radius: 50px;
+}
+.part2{
+    display: inline;
+}
+.part2 li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.part2 li a{
+    text-decoration: none;
+    color: bisque;
+}
+.part2 li a:hover{
+    color:#D423D5;
+}
   
