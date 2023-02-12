@@ -108,7 +108,7 @@ document.getElementById('btn-more').addEventListener('keyup', function(event){
 document.getElementById('delete-confirm').addEventListener('keyup', function(event){
     const text = event.target.value;
     const deleteButton = document.getElementById('button-delete');
-    if(text === 'delete'){
+    if(text === 'email'){
         deleteButton.removeAttribute('disabled');
     }
     else{
