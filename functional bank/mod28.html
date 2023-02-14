@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone-05: Module-28</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <style>
+        .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  header{
+    height: 500px;
+    background-color: black;
+  }
+    </style>
+</head>
+<body>
+    <header class="max-h-screen">
+        <nav class="flex justify-between items-center bg-black text-white">
+            <div class="flex bg-emerald-100 rounded-3xl ml-5">
+            <img class="w-20 rounded-full" src="../images/nizam2.png">
+            <h1 class="text-3xl font-bold text-pink-900">Milstone-05<br><span class="text-green-900">Module-28</span></h1>
+        </div>
+            <ul class="flex mr-20 font-bold">
+                <li class="pr-5 hover:text-yellow-500"><a href="../index.html">Home</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="../mod25.html">Module-25</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="../mod26.html">Module-26</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="../mod27/mod27.html">Module-28</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="../mod29.html">Module-29</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="#">Milstone-01</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="#">Milstone-02</a></li>
+                <li class="pr-5 hover:text-pink-900"><a href="#">Milstone-03</a></li>
+            </ul>
+        </nav>
+        <div class="flex justify-around items-center bg-black">
+            <div class="text-yellow-500 text-3xl font-bold bg-black w-100 h-100">
+                <h1 class="text-5xl">Assalamualaikum!</h1>
+                <h1 class="text-7xl text-rose-800 font-bold">I am Nizam</h1>
+                <h2 class="text-5xl">Student of Batch 07</h2>
+                <p class="text-4xl">This page created by using tailwindcss</p>
+            </div>
+            <div>
+                <img class="rounded-full" src="../images/Md-Nizam-uddin.jpeg">
+            </div>
+        </div>
+    </header>
+    <main class="bg-black">
+        <marquee class="text-5xl bg-slate-900 text-rose-700">Assalamualaikum! Welcome to Milstone-05 Module-27 Practice Section. I am Nizam, Student of Batch-07. This page created by using tailwindcss.</marquee>
+    <h1 class="text-7xl text-center text-slate-900 bg-yellow-300 tracking-in-expand">Module-28 Practice</h1><br>
+    <section>
+        <h1 class="text-7xl text-rose-900 text-center font-bold mt-10">WELCOME TO <span class="font-bold text-violet-600 tracking-in-expand">AMAR Bank</span></h1>
+
+    </section>
+    <section class="mt-8 bg-black">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+            <div class="bg-yellow-400 p-8 rounded-lg">
+                <h4 class="text-4xl font-bold tracking-in-expand">Deposit</h4>
+                <h2 class="text-5xl font-bold">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-rose-900 text-white p-8 rounded-lg">
+                <h4 class="text-4xl tracking-in-expand font-bold">Withdraw</h4>
+                <h2 class="text-5xl font-bold">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-violet-900 text-white p-8 rounded-lg">
+                <h4 class="text-4xl tracking-in-expand font-bold">Balance</h4>
+                <h2 class="text-5xl font-bold">$<span id="balance-total">1240</span></h2>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Deposit and withdraw section -->
+    <section class="mt-8 w-3/4 mx-auto bg-black">
+        <!-- div.grid.grid-cols-2.gap-4 -->
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-violet-900 p-8 rounded-lg">
+                <h2 class="text-5xl text-white mb-4 tracking-in-expand">Your Deposit</h2>
+                <input id="deposit-field" class="w-3/4 px-4 py-3 rounded-lg" type="text" placeholder="$ Amount you want to deposit">
+                <button id="btn-deposit" class="bg-yellow-400 px-6 py-2 mt-3 text-black hover:bg-rose-900 hover:text-white font-bold rounded-lg">Deposit</button>
+            </div>
+            <div class="bg-green-900 p-8">
+                <h2 class="text-5xl text-white mb-4 tracking-in-expand">Your Withdraw</h2>
+                <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded-lg" type="text" placeholder="$ Amount you want to withdraw">
+                <button id="btn-withdraw" class="bg-rose-900 text-white px-6 py-2 mt-3 hover:bg-yellow-500 hover:text-black font-bold rounded-lg">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>

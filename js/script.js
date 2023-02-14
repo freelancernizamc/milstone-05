@@ -75,12 +75,12 @@ placesContainer.classList.remove('text');
 
 // Video 25-7 NodeList, htmlcollection, parentNode, childnodes, createElement
 // Video 25-8 Create HTML elements using Javascript and appendChild
-const placesList = document.getElementById('places-list');
-// what to be added
-const li = document.createElement('li');
-li.innerText = 'pahartoli shalbon';
-// add the child
-placesList.appendChild(li);
+// const placesList = document.getElementById('places-list');
+// // what to be added
+// const li = document.createElement('li');
+// li.innerText = 'pahartoli shalbon';
+// // add the child
+// placesList.appendChild(li);
 
 
 const main = document.getElementById('main-container');
@@ -98,3 +98,12 @@ const main = document.getElementById('main-container');
   document.getElementById('quiz').style.color ='purple';
   document.getElementById('quiz').style.fontSize ='50px';
   document.getElementById('quiz').style.textAlign ='center';
+
+  // From tutorial
+  // 
+  // const startTime = performance.now();
+  // for(let i = 0; i <= 50; i++){
+  //   console.log(i);
+  // }
+  // const endTime = performance.now();
+  // console.log(`loop took ${endTime - startTime} milliseconds to finish`);
