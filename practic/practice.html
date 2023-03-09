@@ -13,75 +13,46 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-black container-fluid">
-          <div class="d-flex navbar-brand text-warning rounded-pill bg-black">
-              <img class="img-fluid" src="images/Md-Nizam-uddin.jpeg" width="60" height="24">
-              <h4>Milstone-5<br>Practice</h4>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold ">
-              <li class="nav-item"><a class="nav-link text-white" href="/index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="../mod25.html">Module-25</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="../mod26.html">Module-26</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="../mod27/mod27.html">Module-27</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="../mod28/mod28.html">Module-28</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="../mod29.html">Module-29</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="mod23.html">Module-23</a></li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Milstone
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Milstone-01</a></li>
-                    <li><a class="dropdown-item" href="#">Milstone-02</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="index.html">Milstone-03</a></li>
-                    <li><a class="dropdown-item" href="index.html">Milstone-04</a></li>
-                  </ul>
-                </li>
+    <header class="bg-slate-900 md:w-full">
+      <nav class="flex justify-between items-center bg-black text-white">
+          <div class="flex bg-emerald-100 rounded-3xl ml-5">
+          <img class="w-10 rounded-full" src="images/nizam2.png">
+          <div>
+          <h1 class="md:text-3xl font-bold text-yellow-900">MILSTONE<span class="text-pink-900 md:tex-7xl">-05</span></h1>
+          <h1 class="md:text-3xl font-bold text-pink-900">MY<span class="text-indigo-900 md:tex-7xl">PROJECTS</span></h1>
+      </div>
+      </div>
+          <ul class="md:flex md:mr-20 font-bold">
+              <li class="pr-5 hover:text-pink-900"><a href="index.html">Home</a></li>
+              <li class="pr-5 hover:text-pink-900"><a href="https://freelancernizamc.github.io/digital-agency/">Digital Agency</a></li>
+              <li class="pr-5 hover:text-pink-900"><a href="https://myshoppingcart2.netlify.app/">My Shopping Cart</a></li>
+              <li class="pr-5 hover:text-pink-900"><a href="https://freelancernizamc.github.io/practice-m6/">Projects with API</a></li>
+              <li class="pr-5 hover:text-pink-900"><a href="https://reveal-bs.netlify.app/">Reveal</a></li>
+              <li class="pr-5 hover:text-pink-900"><a href="https://freelancernizamc.github.io/milstone-03/mod14.html">Bikerz Zone</a></li>
+              <li class="pr-5 hover:text-pink-900"><a href="https://freelancernizamc.github.io/nizam-s-portfolio/">Nizam's Portfolio</a></li>
           </ul>
-          <button class="btn bg-warning text-dark me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Modal</button>
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Assalamualaikum!</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-               This page made by Bootstrap.
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Change</button>
-              </div>
-          </div>
-          </div>
-          </div>
-      </div>
       </nav>
-      <div class="d-flex justify-content-around align-items-center bg-black text-white">
+      <div class="flex justify-around items-center">
+          <div class="text-warning bg-black text-7xl">
+              <div>
+                <title>Digital Watch</title>
+              </div>
+              <div>
+                <h1 id="clock"></h1>
+              </div>
+            </div>
           <div>
-              <h1>Assalamualaikum!</h1>
-              <h1 class="display-1 fw-bold text-warning">I am Nizam</h1>
-              <h4>Student of Batch-7</h4>
-          </div>
-          <div>
-              <img class="rounded-circle" src="images/nizam2.png" alt="">
+              <img class="rounded-full" src="images/nizam2.png" alt="">
           </div>
       </div>
-      <marquee class="fw-bold fs-3 bg-yellow-500">WELCOME TO MILSTONE 05 PRACTICE SECTION, I AM NIZAM STUDENT OF BATCH 07</marquee>
-  </header><br>
+  </header>
   <main>
     <div>
-      <h1 class="text-center fw-bold text-info">
+      <h1 class="text-center font-bold text-info text-5xl">
         My Shopping Budget : <span> 4000</span>
       </h1>
     </div><br><br>
@@ -90,8 +61,8 @@
       <div>
         <div class="rose p-2 box">
           <img class="logo" src="./images/kitkat.png" alt="" />
-          <h6>Fashionable Watch</h6>
-          <h5>Price: <span id="kitkat-price"> 200</span></h5>
+          <h6 class="text-2xl">Fashionable Watch</h6>
+          <h5 class="text-1xl pb-2">Price: <span id="kitkat-price"> 200</span></h5>
           <input
             id="kitkat-quantity"
             type="text"
@@ -104,7 +75,7 @@
         </div>
         <div class="rose p-3 box">
           <img class="logo" src="./images/image-removebg-preview.png" alt="" />
-          <h6>Smart Bag</h6>
+          <h6 class="text-2xl">Smart Bag</h6>
           <h5>Price: <span id="rose-price"> 100</span></h5>
           <input
             id="rose-quantity"
@@ -115,7 +86,7 @@
         </div>
         <div class="rose p-3 box">
           <img class="logo" src="./images/diary.jpg" alt="" />
-          <h6>Shoe</h6>
+          <h6 class="text-2xl">Shoe</h6>
           <h5>Price: <span id="diary-price"> 100</span></h5>
           <input
             id="diary-quantity"
@@ -126,27 +97,27 @@
         </div>
       </div>
       <div class="money-tracker text-center">
-        <h4>Chocolate: <span id="chocolate"> 00</span></h4>
+        <h4 class="text-2xl">Chocolate: <span id="chocolate"> 00</span></h4>
         <hr />
-        <h4>Rose: <span id="rose"> 00</span></h4>
+        <h4 class="text-2xl">Rose: <span id="rose"> 00</span></h4>
         <hr />
-        <h4>Diary: <span id="diary"> 00</span></h4>
+        <h4 class="text-2xl">Diary: <span id="diary"> 00</span></h4>
         <hr />
-        <h3>Total: <span id="total"> 00</span></h3>
+        <h3 class="text-2xl">Total: <span id="total"> 00</span></h3>
 
         <div class="promo-code mt-3 text-center p-3">
-          <h5 class="bg-info mt-2">Use Promo Code for 30% Discount</h5>
+          <h5 class="bg-info mt-2 text-2xl">Use Promo Code for 30% Discount</h5>
           <input
             id="promo-code"
             class="p-2 mt-2"
             type="text"
             placeholder="DISCO30"
           />
-          <button id="promoApplyBtn" class="btn btn-primary" type="button">Apply</button>
+          <button id="promoApplyBtn" class="btn btn-primary text-pink-700" type="button">Apply</button>
             
           
         </div>
-        <h2 class="mt-5">ALL COST :<span id="all-total"> 00</span></h2>
+        <h2 class="mt-5 text-2xl">ALL COST :<span id="all-total"> 00</span></h2>
       </div>
     </div><br><br>
     <section>
@@ -189,42 +160,105 @@
     </div>
   </section><br><br>
   <section>
-    <section class="mt-8 bg-black">
-      <div class="row roe-cols-3 gap-4 w-10 mx-auto">
-          <div class="bg-yellow-400 p-8 rounded-lg col">
-              <h4 class="text-4xl font-bold tracking-in-expand">Deposit</h4>
-              <h2 class="text-5xl font-bold">$<span id="deposit-total">00</span></h2>
+    <div>
+      <h1 class="text-5xl text-center mt-4">Functional <span class="text-red-500 font-medium">Baap-Er-Bank</span>!!!</h1>
+    </div>
+     <!-- balance and transaction summary -->
+     <div class="mt-8">
+      <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+          <div class="bg-yellow-400 p-8 rounded-lg">
+              <h4 class="text-3xl">Deposit</h4>
+              <h2 class="text-5xl font-medium">$<span id="deposit-total">00</span></h2>
           </div>
-          <div class="bg-rose-900 text-white p-8 rounded-lg col">
-              <h4 class="text-4xl tracking-in-expand font-bold">Withdraw</h4>
-              <h2 class="text-5xl font-bold">$<span id="withdraw-total">00</span></h2>
+          <div class="bg-red-400 p-8 rounded-lg">
+              <h4 class="text-3xl">Withdraw</h4>
+              <h2 class="text-5xl font-medium">$<span id="withdraw-total">00</span></h2>
           </div>
-          <div class="bg-violet-900 text-white p-8 rounded-lg col">
-              <h4 class="text-4xl tracking-in-expand font-bold">Balance</h4>
-              <h2 class="text-5xl font-bold">$<span id="balance-total">1240</span></h2>
-          </div>
-          
-      </div>
-  </section>
-  <!-- Deposit and withdraw section -->
-  <section class="mt-8 w-3/4 mx-auto bg-black">
-      <!-- div.grid.grid-cols-2.gap-4 -->
-      <div class="row row-cols-2 gap-4 inline">
-          <div class="bg-success px-2 py-4 rounded-lg cols-3">
-              <h2 class="text-5xl text-white mb-4 tracking-in-expand">Your Deposit</h2>
-              <input id="deposit-field" class="w-3/4 px-4 py-3 rounded-lg" type="text" placeholder="$ Amount you want to deposit">
-              <button id="btn-deposit" class="bg-warning px-6 py-2 mt-3 text-black hover:bg-rose-900 hover:text-white font-bold rounded-lg">Deposit</button>
-          </div>
-          <div class="bg-primary p-4 cols-3">
-              <h2 class="text-5xl text-white mb-4 tracking-in-expand">Your Withdraw</h2>
-              <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded-lg" type="text" placeholder="$ Amount you want to withdraw">
-              <button id="btn-withdraw" class="bg-success text-white px-6 py-2 mt-3 hover:bg-warning hover:text-black font-bold rounded-lg">Withdraw</button>
+          <div class="bg-blue-400 p-8 rounded-lg">
+              <h4 class="text-3xl">Balance</h4>
+              <h2 class="text-5xl font-medium">$<span id="balance-total">1240</span></h2>
           </div>
       </div>
-  </section><br><br>
-
+    </div>
+  <!-- deposit and Withdraw section -->
+  <div class="mt-8 w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-4">
+          <div class="bg-violet-400 p-8 rounded-lg">
+              <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
+              <input id="deposit-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to deposit">
+              <button id="btn-deposit" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Deposit</button>
+          </div>
+          <div class="bg-amber-400 p-8 rounded-lg">
+              <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+              <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount  you want to deposit">
+              <button id="btn-withdraw" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Withdraw</button>
+          </div>
+      </div>
+    </div>
   </section>
-</main>
+</main><br>
+<footer class="footer grid-rows-1 p-10 bg-neutral text-neutral-content">
+  <div>
+      <img class="img-fluid w-[200px] rounded-full" src="images/nizam2.png">
+      <h1 class="text-3xl text-yellow-300">Md Nizam Uddin</h1>
+      <h1 class="text-2xl">Batch 07</h1>
+  </div>
+  <div>
+    <span class="footer-title text-2xl text-yellow-300">My Projects</span> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/digital-agency/">Digital Agency</a> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/donate-today/">Donate Today</a> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/convension-center/">Convension Center</a> 
+    <a class="link link-hover" href="https://reveal-bs.netlify.app/">Reveal</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/jakanaka-project/">Jakanaka Projects</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/penguins-fashion/">Penguine Fashion</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/influencer-products/">Influencer Products</a>
+  </div> 
+  <div>
+    <span class="footer-title text-2xl text-yellow-300">Milstone</span> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-01/">Milstone 01</a> 
+    <a class="link link-hover" href="https://milstone-2.netlify.app/">Milstone 02</a> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-03/index.html">Milstone 03</a> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-04/">Milstone 04</a>
+    <a class="link link-hover" href="https://milstone-05.netlify.app/">Milstone 05</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-06/">Milstone 06</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-07/">Milstone 07</a>
+  </div> 
+ 
+  <div>
+    <span class="footer-title text-2xl text-yellow-300">Assignment</span> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/assignment-1/">Assignment 01</a> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/assignment-2/">Assignment 02</a> 
+    <a class="link link-hover" href="https://assignment-03-bynizam.netlify.app/">Assignment 03</a> 
+    <a class="link link-hover" href="">Assignment 04</a>
+    <a class="link link-hover" href="https://assignment-5by-nizam.netlify.app/">Assignment 05</a>
+    <a class="link link-hover" href="https://assignment-06-bynizam.netlify.app/">Assignment 06</a>
+    <a class="link link-hover" href="">Assignment 07</a>
+  </div> 
+  <div>
+    <span class="footer-title text-2xl text-yellow-300">My Projects</span> 
+    <a class="link link-hover">Animated Website</a> 
+    <a class="link link-hover">Bootstrap Website</a> 
+    <a class="link link-hover">Nice Theme</a> 
+    <a class="link link-hover">Responsive Website</a>
+    <a class="link link-hover">Stylish Theme</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/nizam-s-portfolio/">Nizam's Portfolio</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-03/mod14.html">Bikerz Zone</a>
+  </div> 
+  <div>
+    <span class="footer-title text-2xl text-yellow-300">My Projects</span> 
+    <a class="link link-hover" href="https://myshoppingcart2.netlify.app/">My Shopping Cart</a> 
+    <a class="link link-hover" href="https://tea-house-by-n.netlify.app/">Tea House</a> 
+    <a class="link link-hover" href="https://freelancernizamc.github.io/practice-m6/">Projects with API</a> 
+    <a class="link link-hover">My Bank</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-06/mod35.html">Mobile Hunter</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/sports-db/">Sports DB</a>
+    <a class="link link-hover" href="https://freelancernizamc.github.io/milstone-06/mod34.html">Countries API</a>
+  </div>
+</footer>
+<h6 class="text-center bg-neutral text-neutral-content">Copyright &copy;2023 Allright Reserved</h6><br>
+      <script src="js/deposit.js"></script>
+      <script src="js/utilities.js"></script>
+      <script src="js/withdraw.js"></script>
       <script src="js/budget.js"></script>
       <script src="js/practice.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
